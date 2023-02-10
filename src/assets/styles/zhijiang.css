@@ -1,0 +1,55 @@
+html,
+body,
+#app,
+.view {
+  width: 100%;
+  height: 100%;
+}
+.youshebiaoti {
+  font-family: "YouSheBiaoTiHei-2";
+  font-weight: 400;
+}
+.jlinxin {
+  font-family: "JLinXin";
+}
+.align__center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.module__title {
+  color: #333;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  font-family: "JLinXin";
+}
+.module__title--sub {
+  color:#D1D1D1;
+  font-size:14px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 9px;
+}
+.dot::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #3d6cba;
+  margin-right: 16px;
+  margin-top:8px;
+}
+.dot::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #3d6cba;
+  margin-left: 16px;
+  margin-top:8px;
+}

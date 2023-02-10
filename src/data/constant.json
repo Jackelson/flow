@@ -1,0 +1,3407 @@
+{
+  "logo": "images/logo-lab-header@2x_tiny.png",
+  "portal": "images/logo-portal@2x.png",
+  "footer": "images/footerlogo@2x.png",
+  "footerIcon": {
+    "print": "images/print.png",
+    "phone": "images/phone.png",
+    "addr": "images/addr.png",
+    "time": "images/time.png"
+  },
+  "footerMap": "images/map@2x.png",
+  "menuList": [
+    {
+      "title": "简介",
+      "key": "intro",
+      "uri": "/intro",
+      "descript": "Brief introduction"
+    },
+    {
+      "title": "应用场景",
+      "key": "scene",
+      "uri": "/scene",
+      "descript": "Application scenario"
+    },
+    {
+      "title": "实时数据",
+      "key": "visualze",
+      "uri": "/visualze",
+      "descript": "Factual data"
+    },
+    {
+      "title": "团队",
+      "key": "about",
+      "uri": "/about",
+      "descript": "Team"
+    }
+  ],
+  "acrossImg": "images/acrossBanner@2x.png",
+  "acrossTitle": "images/across_title@2x.png",
+  "accrossRobot": "images/across_robot@2x.png",
+  "targetList": [
+    {
+      "src": "images/zzjc@2x.png",
+      "hover": "images/zzjchover@2x.png"
+    },
+    {
+      "src": "images/zzxx@2x.png",
+      "hover": "images/zzxxhover@2x.png"
+    },
+    {
+      "src": "images/zzzy@2x.png",
+      "hover": "images/zzzyhover@2x.png"
+    },
+    {
+      "src": "images/zsfx@2x.png",
+      "hover": "images/zsfxhover@2x.png"
+    }
+  ],
+  "studyBg": "images/studybg@2x.png",
+  "studyContentList": [
+    {
+      "src": "images/integration.png",
+      "title": "云边端一体化智能机器人计算平台",
+      "desc": "<p>大规模多模态数据的协同处理与分布式存储</p><p>云边端计算资源的动态管理与计算任务的协同调度</p><p>面向多任务的机器人算法模型分割与轻量化</p><p>机器人作业场景的云端虚拟仿真模型快速生成与状态评估</p>",
+      "icon": "images/cloudIcon@2x.png"
+    },
+    {
+      "src": "images/reason.gif",
+      "title": "机器人的通用知识表达与推理",
+      "desc": "<p>多模态知识的通用表达格式与知识存储</p><p>大规模多模态知识的高效知识推理</p><p>基于知识库与知识推理的任务理解与任务决策</p>",
+      "icon": "images/reasonIcon@2x.png"
+    },
+    {
+      "src": "images/control.gif",
+      "title": "基于学习的机器人自主控制策略",
+      "desc": "<p>自主控制策略的鲁棒强化学习</p><p>自主控制策略的多专家策略协同学习</p><p>Sim2Real的自适应策略迁移</p><p>局部参数系统辨识+策略搜索</p>",
+      "icon": "images/controlIcon@2x.png"
+    },
+    {
+      "src": "images/visual.gif",
+      "title": "机器人视觉技术",
+      "desc": "<p>生物识别、场景识别</p><p>6D姿态估计与抓取点确定</p><p>主动视觉</p>",
+      "icon": "images/visualIcon@2x.png"
+    },
+    {
+      "src": "images/location.gif",
+      "title": "机器人定位导航技术",
+      "desc": "<p>无预置地图的目标驱动视觉导航</p><p>协同slam、主动slam、长期slam</p>",
+      "icon": "images/locateIcon@2x.png"
+    }
+  ],
+  "keyTechList": [
+    {
+      "num": "01",
+      "class": "环境感知",
+      "pic": [
+        "images/perceptionMan@2x.png",
+        "images/perceptionScene@2x.png",
+        "images/perceptionVisitor@2x.png",
+        "images/perceptionObject@2x.png"
+      ]
+    },
+    {
+      "num": "02",
+      "class": "策略规划",
+      "pic": [
+        "images/tourdesign@2x.png",
+        "images/tourlikeman@2x.png",
+        "images/tourtalk@2x.png",
+        "images/tourmultitalk@2x.png"
+      ]
+    },
+    {
+      "num": "03",
+      "class": "云边端计算",
+      "pic": [
+        "images/yunbianduanjiagou@2x.png",
+        "images/shujuchuanshu@2x.png",
+        "images/fangzhenjisuan@2x.png"
+      ]
+    },
+    {
+      "num": "04",
+      "class": "知识库",
+      "pic": [
+        "images/renwulijie@2x.png",
+        "images/zhishibiaoda@2x.png",
+        "images/renwujuecetuili@2x.png"
+      ]
+    },
+    {
+      "num": "05",
+      "class": "机器人控制",
+      "pic": ["images/jixiebi@2x.png", "images/dingweidaohang@2x.png"]
+    },
+    {
+      "num": "06",
+      "class": "软件架构",
+      "pic": ["images/ros@2x.png"]
+    }
+  ],
+  "aboutBannerList": [
+    {
+      "src": "images/team.jpg",
+      "backgroundColor": "#4D5A5C",
+      "title": "",
+      "desc": "",
+      "backgroundSize": "contain",
+      "backgroundPositionX": "center",
+      "backgroundPositionY": "center"
+    }
+  ],
+  "aboutImage": "images/aboutBanner@2x.png",
+  "teamBg": "images/teamBg@2x.png",
+  "teamGroupList": [
+    {
+      "width": "406",
+      "height": "349",
+      "src": "",
+      "backgroundColor": "#2381ED",
+      "fontColor": "#fff",
+      "waterMark": "A",
+      "watermarkColor": "#fff",
+      "watermarkOpacity": 0.2,
+      "title": "访客感知组",
+      "desc": "基于感知的访客行为分析或访客意图理解，相似衣服人的重识别和多目标跟踪，RGBD的时序相似衣服的ReID、头肩跟踪。"
+    },
+    {
+      "width": "764",
+      "height": "349",
+      "src": "",
+      "backgroundColor": "#fff",
+      "fontColor": "#333",
+      "waterMark": "B",
+      "watermarkColor": "#E2E9E1",
+      "watermarkOpacity": 0.4,
+      "title": "物体感知组",
+      "desc": "机器人自主作业操作的视觉感知模块科研算法研究，融合神经网络和几何方法的物体/行人感知，监控场景下的物体检测与识别、行人结构化属性分析与识别，物体位姿估计跟踪，机械臂的跟踪抓取操作。"
+    },
+    {
+      "width": "406",
+      "height": "255",
+      "src": "",
+      "backgroundColor": "#fff",
+      "fontColor": "#333",
+      "waterMark": "C",
+      "watermarkColor": "#E2E9E1",
+      "watermarkOpacity": 0.4,
+      "title": "定位导航组",
+      "desc": "人机交互实时决策、室内定位导航。"
+    },
+    {
+      "width": "406",
+      "height": "355",
+      "src": "",
+      "backgroundColor": "#fff",
+      "fontColor": "#333",
+      "waterMark": "D",
+      "watermarkColor": "#E2E9E1",
+      "watermarkOpacity": 0.4,
+      "title": "知识库组",
+      "desc": "面向导览场景的多模态知识表达方案设计与实现、知识库构建，任务理解、任务拆解，结合视觉感知的多意图理解。"
+    },
+    {
+      "width": "328",
+      "height": "355",
+      "src": "",
+      "backgroundColor": "#fff",
+      "fontColor": "#333",
+      "waterMark": "E",
+      "watermarkColor": "#E2E9E1",
+      "watermarkOpacity": 0.4,
+      "title": "控制组",
+      "desc": "机器人控制，包括移动机器人、机械臂（含末端执行器）的运动轨迹规划与控制实现。"
+    },
+    {
+      "width": "406",
+      "height": "519",
+      "src": "",
+      "backgroundColor": "#fff",
+      "fontColor": "#333",
+      "waterMark": "F",
+      "watermarkColor": "#E2E9E1",
+      "watermarkOpacity": 0.4,
+      "title": "软件组",
+      "desc": "导览机器人与云脑、ROS侧通信组件建立优化改进，导览机器人人机交互Android侧业务实现，情感语音合成、语义情感理解、多轮语音对话，导览机器人智能应用侧交互/视觉设计、云脑平台前端交互/视觉设计、云脑平台前端开发。"
+    },
+    {
+      "width": "764",
+      "height": "419",
+      "src": "",
+      "backgroundColor": "#fff",
+      "fontColor": "#333",
+      "waterMark": "G",
+      "watermarkColor": "#E2E9E1",
+      "watermarkOpacity": 0.4,
+      "title": "云边端一体化组",
+      "desc": "云边端一体化计算、机器人模拟仿真系统、云边端任务调度、大规模数据压缩与传输、云边端框架下的通信协议研究、模型轻量化、面对机器人多任务协同的云边端一体化分布式计算、分布式图数据库优化、边缘平台的分布式容错。"
+    }
+  ],
+  "memberList": [
+    {
+      "name": "宋伟",
+      "belong": "项目负责人",
+      "profile": "images/profiles/songwei.jpg"
+    },
+    {
+      "name": "穆宗昊",
+      "belong": "定位导航组",
+      "profile": "images/profiles/muzonghao.jpg"
+    },
+    {
+      "name": "姜峰",
+      "belong": "定位导航组",
+      "profile": "images/profiles/jiangfeng.jpg"
+    },
+    {
+      "name": "廖建锋",
+      "belong": "控制组",
+      "profile": "images/profiles/liaojianfeng.jpg"
+    },
+    {
+      "name": "汪江平",
+      "belong": "控制组",
+      "profile": "images/profiles/wangjiangping.jpg"
+    },
+    {
+      "name": "黄秋兰",
+      "belong": "控制组",
+      "profile": "images/profiles/huangqiulan.jpg"
+    },
+    {
+      "name": "蒋远东",
+      "belong": "控制组",
+      "profile": "images/profiles/jiangyuandong.jpg"
+    },
+    {
+      "name": "邵珺",
+      "belong": "控制组",
+      "profile": "images/profiles/shaojun.jpg"
+    },
+    {
+      "name": "张博闻",
+      "belong": "控制组",
+      "profile": "images/profiles/zhangbowen.jpg"
+    },
+    {
+      "name": "李特",
+      "belong": "物体感知组",
+      "profile": "images/profiles/lite.jpg"
+    },
+    {
+      "name": "寄珊珊",
+      "belong": "物体感知组",
+      "profile": "images/profiles/jishanshan.jpg"
+    },
+    {
+      "name": "孟启炜",
+      "belong": "物体感知组",
+      "profile": "images/profiles/mengqiwei.jpg"
+    },
+    {
+      "name": "查长海",
+      "belong": "物体感知组",
+      "profile": "images/profiles/zhachanghai.jpg"
+    },
+    {
+      "name": "杨彦滔",
+      "belong": "知识库组",
+      "profile": "images/profiles/yangyantao.jpg"
+    },
+    {
+      "name": "袭向明",
+      "belong": "知识库组",
+      "profile": "images/profiles/xixiangming.jpg"
+    },
+    {
+      "name": "周元海",
+      "belong": "知识库组",
+      "profile": "images/profiles/zhouyuanhai.jpg"
+    },
+    {
+      "name": "任杰",
+      "belong": "知识库组",
+      "profile": "images/profiles/renjie.jpg"
+    },
+    {
+      "name": "徐泽民",
+      "belong": "知识库组",
+      "profile": "images/profiles/xuzemin.jpg"
+    },
+    {
+      "name": "张鸿轩",
+      "belong": "云边端一体化组",
+      "profile": "images/profiles/zhanghongxuan.jpg"
+    },
+    {
+      "name": "向甜",
+      "belong": "云边端一体化组",
+      "profile": "images/profiles/xiangtian.jpg"
+    },
+    {
+      "name": "张北北",
+      "belong": "云边端一体化组",
+      "profile": "images/profiles/zhangbeibei.jpg"
+    },
+    {
+      "name": "余小康",
+      "belong": "云边端一体化组",
+      "profile": "images/profiles/yuxiaokang.jpg"
+    },
+    {
+      "name": "金鑫",
+      "belong": "云边端一体化组",
+      "profile": "images/profiles/jinxin.jpg"
+    },
+    {
+      "name": "许萌",
+      "belong": "云边端一体化组",
+      "profile": "images/profiles/xumeng.jpg"
+    },
+    {
+      "name": "方伟",
+      "belong": "软件组",
+      "profile": "images/profiles/fangwei.jpg"
+    },
+    {
+      "name": "陆欣澜",
+      "belong": "软件组",
+      "profile": "images/profiles/luxinlan.jpg"
+    },
+    {
+      "name": "王亚鸽",
+      "belong": "软件组",
+      "profile": "images/profiles/wangyage.jpg"
+    }
+  ],
+  "visualze": {
+    "visualzeBgSmall": "images/screen_bg_small.png",
+    "visualzeBgLong": "images/screen_bg_long.png",
+    "visualzeIntentIcon": "images/intent.png",
+    "visualzeSenseIcon": "images/sense.png",
+    "visualzeWakeIcon": "images/wake.png",
+    "visualzeWakeAngle": "images/angle.png",
+    "visualzeInput": "images/input.png",
+    "visualzeOutput": "images/output.png",
+    "visualzeBgShort": "images/screen_bg_short.png",
+    "visualzeGraph": [
+      {
+        "img": "images/common.png",
+        "title": "常识信息",
+        "type": "concept",
+        "color": "#6DE697"
+      },
+      {
+        "img": "images/env.png",
+        "title": "环境信息",
+        "type": "env",
+        "color": "#E8D87F"
+      },
+      {
+        "img": "images/task.png",
+        "title": "任务知识",
+        "type": "motion",
+        "color": "#80B3E6"
+      },
+      {
+        "img": "images/robot.png",
+        "title": "本体知识",
+        "type": "ontology",
+        "color": "#A463E6"
+      },
+      {
+        "img": "images/alg.png",
+        "title": "算法模型",
+        "type": "algo",
+        "color": "#E98383"
+      },
+      {
+        "img": "images/action.png",
+        "title": "动作知识",
+        "type": "action",
+        "color": "#E66060"
+      },
+      {
+        "img": "images/all.png",
+        "title": "全部",
+        "type": "all",
+        "color": "#fff"
+      }
+    ]
+  },
+  "sceneBg": "images/sceneBg@2x.png",
+  "sceneFuncs": [
+    {
+      "title": "迎宾问候",
+      "icon": "images/welcome@2x.png"
+    },
+    {
+      "title": "咨询问答",
+      "icon": "images/qa@2x.png"
+    },
+    {
+      "title": "指路引路",
+      "icon": "images/lead@2x.png"
+    },
+    {
+      "title": "展厅讲解",
+      "icon": "images/explain@2x.png"
+    }
+  ],
+  "keyNavigationProcessBg": "images/keyNavigationProcessBg@2x.png",
+  "keyNavigationProcess": "images/keyNavigationProcess@2x.png",
+  "keyNavigationList": [
+    {
+      "title": "迎宾",
+      "image": "images/welcomeprocess@2x.png",
+      "content": "机器人通过人脸识别查询得到参观客户的基本信息；主动接近目标；定制化问候参观客户；礼貌的与访客拥抱或者握手。"
+    },
+    {
+      "title": "带路",
+      "image": "images/leadroad@2x.png",
+      "content": "机器人将用户从展厅的一个点带领到另一个点。在带领的过程中，机器人位于用户侧前方。如果选择“伴随”模式，隔一段时间机器人转头与被带领用户保持目光接触，注意对方是否跟随，必要时调整速度并做方向指引动作。到达目的地时候，机器人语音通知用户已经到达某地点。"
+    },
+    {
+      "title": "讲解",
+      "image": "images/explainprocess@2x.png",
+      "content": "机器人在展点位置，按照预先设定的位置站立。在听众中根据一定规则选择重点用户。根据重点用户所在位置和展板位置计算合理朝向。演讲过程中，机器人做出预先设定的手势。该手势可以来自人工编辑，也可以根据真人演讲采集生成。"
+    },
+    {
+      "title": "送别",
+      "image": "images/goodbye@2x.png",
+      "content": "机器人在展点位置，按照预先设定的位置站立。在听众中根据一定规则选择重点用户。根据重点用户所在位置和展板位置计算合理朝向。演讲过程中，机器人做出预先设定的手势。该手势可以来自人工编辑，也可以根据真人演讲采集生成。"
+    }
+  ],
+  "flow": "images/flow.gif",
+  "fullBg": "images/fullBg@2x.png",
+  "baseKnow": {
+    "dsp": "第一帧全部数据",
+    "edges": [
+      {
+        "highLight": 0,
+        "id": 740785046,
+        "source": 740045,
+        "target": 740046,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741167425,
+        "source": 740427,
+        "target": 740425,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741059320,
+        "source": 740319,
+        "target": 740320,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741046325,
+        "source": 740306,
+        "target": 740325,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448623189,
+        "source": 448175,
+        "target": 448189,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741059327,
+        "source": 740319,
+        "target": 740327,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 506063189,
+        "source": 505615,
+        "target": 448189,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740766044,
+        "source": 740026,
+        "target": 740044,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 506126620,
+        "source": 505621,
+        "target": 505620,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448725275,
+        "source": 448277,
+        "target": 448275,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741043624,
+        "source": 740303,
+        "target": 740624,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741049315,
+        "source": 740309,
+        "target": 740315,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 741042322,
+        "source": 740302,
+        "target": 740322,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 740772040,
+        "source": 740032,
+        "target": 740040,
+        "title": "打开"
+      },
+      {
+        "highLight": 0,
+        "id": 740762038,
+        "source": 740022,
+        "target": 740038,
+        "title": "演奏"
+      },
+      {
+        "highLight": 0,
+        "id": 740786058,
+        "source": 740046,
+        "target": 740058,
+        "title": "潜入"
+      },
+      {
+        "highLight": 0,
+        "id": 741046314,
+        "source": 740306,
+        "target": 740314,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 741052324,
+        "source": 740312,
+        "target": 740324,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741046315,
+        "source": 740306,
+        "target": 740315,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 741049317,
+        "source": 740309,
+        "target": 740317,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 448701262,
+        "source": 448253,
+        "target": 448262,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448797340,
+        "source": 448349,
+        "target": 448340,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741064326,
+        "source": 740324,
+        "target": 740326,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741042317,
+        "source": 740302,
+        "target": 740317,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 741065624,
+        "source": 740325,
+        "target": 740624,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741043339,
+        "source": 740303,
+        "target": 740339,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741049325,
+        "source": 740309,
+        "target": 740325,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 506123619,
+        "source": 505618,
+        "target": 505619,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740772058,
+        "source": 740032,
+        "target": 740058,
+        "title": "讲解"
+      },
+      {
+        "highLight": 0,
+        "id": 741079340,
+        "source": 740339,
+        "target": 740340,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741043338,
+        "source": 740303,
+        "target": 740338,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740781042,
+        "source": 740041,
+        "target": 740042,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741043331,
+        "source": 740303,
+        "target": 740331,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741043332,
+        "source": 740303,
+        "target": 740332,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741042315,
+        "source": 740302,
+        "target": 740315,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 448683618,
+        "source": 448178,
+        "target": 505618,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741043330,
+        "source": 740303,
+        "target": 740330,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741168425,
+        "source": 740428,
+        "target": 740425,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741045322,
+        "source": 740305,
+        "target": 740322,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 741046308,
+        "source": 740306,
+        "target": 740308,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448715246,
+        "source": 448267,
+        "target": 448246,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740748030,
+        "source": 740008,
+        "target": 740030,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 740764059,
+        "source": 740024,
+        "target": 740059,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740761035,
+        "source": 740021,
+        "target": 740035,
+        "title": "has"
+      },
+      {
+        "highLight": 0,
+        "id": 740764058,
+        "source": 740024,
+        "target": 740058,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740761036,
+        "source": 740021,
+        "target": 740036,
+        "title": "放在"
+      },
+      {
+        "highLight": 0,
+        "id": 448710263,
+        "source": 448262,
+        "target": 448263,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741044624,
+        "source": 740304,
+        "target": 740624,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740752041,
+        "source": 740012,
+        "target": 740041,
+        "title": "在"
+      },
+      {
+        "highLight": 0,
+        "id": 740765032,
+        "source": 740025,
+        "target": 740032,
+        "title": "讲解"
+      },
+      {
+        "highLight": 0,
+        "id": 448793340,
+        "source": 448345,
+        "target": 448340,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740781055,
+        "source": 740041,
+        "target": 740055,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740781058,
+        "source": 740041,
+        "target": 740058,
+        "title": "拥有"
+      },
+      {
+        "highLight": 0,
+        "id": 740764057,
+        "source": 740024,
+        "target": 740057,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740764056,
+        "source": 740024,
+        "target": 740056,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740756042,
+        "source": 740016,
+        "target": 740042,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741048315,
+        "source": 740308,
+        "target": 740315,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 740750030,
+        "source": 740010,
+        "target": 740030,
+        "title": "携带"
+      },
+      {
+        "highLight": 0,
+        "id": 740764054,
+        "source": 740024,
+        "target": 740054,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740769047,
+        "source": 740029,
+        "target": 740047,
+        "title": "递送"
+      },
+      {
+        "highLight": 0,
+        "id": 740764052,
+        "source": 740024,
+        "target": 740052,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741056327,
+        "source": 740316,
+        "target": 740327,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740769043,
+        "source": 740029,
+        "target": 740043,
+        "title": "踢"
+      },
+      {
+        "highLight": 0,
+        "id": 740785058,
+        "source": 740045,
+        "target": 740058,
+        "title": "游泳"
+      },
+      {
+        "highLight": 0,
+        "id": 740777044,
+        "source": 740037,
+        "target": 740044,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 740770037,
+        "source": 740030,
+        "target": 740037,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 740770033,
+        "source": 740030,
+        "target": 740033,
+        "title": "能够"
+      },
+      {
+        "highLight": 0,
+        "id": 448790273,
+        "source": 448342,
+        "target": 448273,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740770032,
+        "source": 740030,
+        "target": 740032,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 741045317,
+        "source": 740305,
+        "target": 740317,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 740765046,
+        "source": 740025,
+        "target": 740046,
+        "title": "潜入"
+      },
+      {
+        "highLight": 0,
+        "id": 741045315,
+        "source": 740305,
+        "target": 740315,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 448680618,
+        "source": 448175,
+        "target": 505618,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740764060,
+        "source": 740024,
+        "target": 740060,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741065328,
+        "source": 740325,
+        "target": 740328,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740765045,
+        "source": 740025,
+        "target": 740045,
+        "title": "游泳"
+      },
+      {
+        "highLight": 0,
+        "id": 506120620,
+        "source": 505615,
+        "target": 505620,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448801342,
+        "source": 448353,
+        "target": 448342,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740765041,
+        "source": 740025,
+        "target": 740041,
+        "title": "拥有"
+      },
+      {
+        "highLight": 0,
+        "id": 740768054,
+        "source": 740028,
+        "target": 740054,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740754017,
+        "source": 740014,
+        "target": 740017,
+        "title": "在"
+      },
+      {
+        "highLight": 0,
+        "id": 740754018,
+        "source": 740014,
+        "target": 740018,
+        "title": "在"
+      },
+      {
+        "highLight": 0,
+        "id": 741048323,
+        "source": 740308,
+        "target": 740323,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741044320,
+        "source": 740304,
+        "target": 740320,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448713267,
+        "source": 448265,
+        "target": 448267,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448788342,
+        "source": 448340,
+        "target": 448342,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 506124669,
+        "source": 505619,
+        "target": 505669,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741054338,
+        "source": 740314,
+        "target": 740338,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448687618,
+        "source": 448182,
+        "target": 505618,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741044328,
+        "source": 740304,
+        "target": 740328,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740787048,
+        "source": 740047,
+        "target": 740048,
+        "title": "装"
+      },
+      {
+        "highLight": 0,
+        "id": 741054336,
+        "source": 740314,
+        "target": 740336,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 740774055,
+        "source": 740034,
+        "target": 740055,
+        "title": "喝"
+      },
+      {
+        "highLight": 0,
+        "id": 448694253,
+        "source": 448246,
+        "target": 448253,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741058624,
+        "source": 740318,
+        "target": 740624,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448807262,
+        "source": 448359,
+        "target": 448262,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740764035,
+        "source": 740024,
+        "target": 740035,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 448728275,
+        "source": 448280,
+        "target": 448275,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740780050,
+        "source": 740040,
+        "target": 740050,
+        "title": "展示"
+      },
+      {
+        "highLight": 0,
+        "id": 448719267,
+        "source": 448271,
+        "target": 448267,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740764031,
+        "source": 740024,
+        "target": 740031,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740755042,
+        "source": 740015,
+        "target": 740042,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740768049,
+        "source": 740028,
+        "target": 740049,
+        "title": "吃"
+      },
+      {
+        "highLight": 0,
+        "id": 740778044,
+        "source": 740038,
+        "target": 740044,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 448805359,
+        "source": 448357,
+        "target": 448359,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448637273,
+        "source": 448189,
+        "target": 448273,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448718267,
+        "source": 448270,
+        "target": 448267,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740770051,
+        "source": 740030,
+        "target": 740051,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 740760048,
+        "source": 740020,
+        "target": 740048,
+        "title": "融化"
+      },
+      {
+        "highLight": 0,
+        "id": 741171425,
+        "source": 740431,
+        "target": 740425,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448723273,
+        "source": 448275,
+        "target": 448273,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740759047,
+        "source": 740019,
+        "target": 740047,
+        "title": "装"
+      },
+      {
+        "highLight": 0,
+        "id": 741072337,
+        "source": 740332,
+        "target": 740337,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448708253,
+        "source": 448260,
+        "target": 448253,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740788055,
+        "source": 740048,
+        "target": 740055,
+        "title": "喝"
+      },
+      {
+        "highLight": 0,
+        "id": 506121615,
+        "source": 505616,
+        "target": 505615,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740753014,
+        "source": 740013,
+        "target": 740014,
+        "title": "在"
+      },
+      {
+        "highLight": 0,
+        "id": 740768035,
+        "source": 740028,
+        "target": 740035,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740763024,
+        "source": 740023,
+        "target": 740024,
+        "title": "has"
+      },
+      {
+        "highLight": 0,
+        "id": 448802342,
+        "source": 448354,
+        "target": 448342,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740755026,
+        "source": 740015,
+        "target": 740026,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741060328,
+        "source": 740320,
+        "target": 740328,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741060323,
+        "source": 740320,
+        "target": 740323,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741060325,
+        "source": 740320,
+        "target": 740325,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740784046,
+        "source": 740044,
+        "target": 740046,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 740762052,
+        "source": 740022,
+        "target": 740052,
+        "title": "演奏"
+      },
+      {
+        "highLight": 0,
+        "id": 740788049,
+        "source": 740048,
+        "target": 740049,
+        "title": "喝"
+      },
+      {
+        "highLight": 0,
+        "id": 741046341,
+        "source": 740306,
+        "target": 740341,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741166425,
+        "source": 740426,
+        "target": 740425,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 506119617,
+        "source": 505614,
+        "target": 505617,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 738109618,
+        "source": 737604,
+        "target": 505618,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741044305,
+        "source": 740304,
+        "target": 740305,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 506119616,
+        "source": 505614,
+        "target": 505616,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 448681620,
+        "source": 448176,
+        "target": 505620,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740751026,
+        "source": 740011,
+        "target": 740026,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 448791340,
+        "source": 448343,
+        "target": 448340,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740749055,
+        "source": 740009,
+        "target": 740055,
+        "title": "吃"
+      },
+      {
+        "highLight": 0,
+        "id": 740771040,
+        "source": 740031,
+        "target": 740040,
+        "title": "控制"
+      },
+      {
+        "highLight": 0,
+        "id": 740759036,
+        "source": 740019,
+        "target": 740036,
+        "title": "装"
+      },
+      {
+        "highLight": 0,
+        "id": 448800176,
+        "source": 448352,
+        "target": 448176,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741066339,
+        "source": 740326,
+        "target": 740339,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741049335,
+        "source": 740309,
+        "target": 740335,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 448778340,
+        "source": 448330,
+        "target": 448340,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741043327,
+        "source": 740303,
+        "target": 740327,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 448721262,
+        "source": 448273,
+        "target": 448262,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741043324,
+        "source": 740303,
+        "target": 740324,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741060321,
+        "source": 740320,
+        "target": 740321,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 506127620,
+        "source": 505622,
+        "target": 505620,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 506066261,
+        "source": 505618,
+        "target": 448261,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 506123668,
+        "source": 505618,
+        "target": 505668,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 740755020,
+        "source": 740015,
+        "target": 740020,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740763049,
+        "source": 740023,
+        "target": 740049,
+        "title": "去"
+      },
+      {
+        "highLight": 0,
+        "id": 740764029,
+        "source": 740024,
+        "target": 740029,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740764027,
+        "source": 740024,
+        "target": 740027,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 741046336,
+        "source": 740306,
+        "target": 740336,
+        "title": "Or"
+      },
+      {
+        "highLight": 0,
+        "id": 740764025,
+        "source": 740024,
+        "target": 740025,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 740772039,
+        "source": 740032,
+        "target": 740039,
+        "title": "互动"
+      },
+      {
+        "highLight": 0,
+        "id": 740752013,
+        "source": 740012,
+        "target": 740013,
+        "title": "在"
+      },
+      {
+        "highLight": 0,
+        "id": 740760021,
+        "source": 740020,
+        "target": 740021,
+        "title": "装在"
+      },
+      {
+        "highLight": 0,
+        "id": 740766055,
+        "source": 740026,
+        "target": 740055,
+        "title": "喜欢"
+      },
+      {
+        "highLight": 0,
+        "id": 740771053,
+        "source": 740031,
+        "target": 740053,
+        "title": "讲解"
+      },
+      {
+        "highLight": 0,
+        "id": 740758045,
+        "source": 740018,
+        "target": 740045,
+        "title": "在"
+      },
+      {
+        "highLight": 0,
+        "id": 741063327,
+        "source": 740323,
+        "target": 740327,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741063329,
+        "source": 740323,
+        "target": 740329,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 741058331,
+        "source": 740318,
+        "target": 740331,
+        "title": "And"
+      },
+      {
+        "highLight": 0,
+        "id": 740779040,
+        "source": 740039,
+        "target": 740040,
+        "title": "看向"
+      },
+      {
+        "highLight": 0,
+        "id": 740763041,
+        "source": 740023,
+        "target": 740041,
+        "title": "有"
+      },
+      {
+        "highLight": 0,
+        "id": 506122615,
+        "source": 505617,
+        "target": 505615,
+        "title": "is"
+      },
+      {
+        "highLight": 0,
+        "id": 741049341,
+        "source": 740309,
+        "target": 740341,
+        "title": "Or"
+      }
+    ],
+    "nodes": [
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505620,
+        "level": 0,
+        "singleTag": "动物_ontology",
+        "title": "动物"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314201,
+        "level": 0,
+        "singleTag": "鲍虎军_env",
+        "title": "鲍虎军"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740068,
+        "level": 0,
+        "singleTag": "左手_action",
+        "title": "左手"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448176,
+        "level": 0,
+        "singleTag": "鱼_ontology",
+        "title": "鱼"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740008,
+        "level": 0,
+        "singleTag": "篮球_concept",
+        "title": "篮球"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 740079,
+        "level": 0,
+        "singleTag": "云脑平台_env",
+        "title": "云脑平台"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740478,
+        "level": 0,
+        "singleTag": "讲解_motion",
+        "title": "讲解"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740014,
+        "level": 0,
+        "singleTag": "中国_concept",
+        "title": "中国"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740040,
+        "level": 0,
+        "singleTag": "展板_concept",
+        "title": "展板"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 740388,
+        "level": 0,
+        "singleTag": "原点_env",
+        "title": "原点"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448175,
+        "level": 0,
+        "singleTag": "双足机器人_ontology",
+        "title": "双足机器人"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 740473,
+        "level": 0,
+        "singleTag": "语言_algo",
+        "title": "语言"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740056,
+        "level": 0,
+        "singleTag": "地外探测机器人_concept",
+        "title": "地外探测机器人"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448357,
+        "level": 0,
+        "singleTag": "地点_ontology",
+        "title": "地点"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740034,
+        "level": 0,
+        "singleTag": "茶_concept",
+        "title": "茶"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740483,
+        "level": 0,
+        "singleTag": "家庭场景_motion",
+        "title": "家庭场景"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293829,
+        "level": 0,
+        "singleTag": "你好_开心_action",
+        "title": "你好_开心"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740055,
+        "level": 0,
+        "singleTag": "金天磊_concept",
+        "title": "金天磊"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740067,
+        "level": 0,
+        "singleTag": "右手_action",
+        "title": "右手"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 2523221,
+        "level": 0,
+        "singleTag": "桌子_env",
+        "title": "桌子"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740052,
+        "level": 0,
+        "singleTag": "音乐家机器人_concept",
+        "title": "音乐家机器人"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740404,
+        "level": 0,
+        "singleTag": "开心招手_action",
+        "title": "开心招手"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293833,
+        "level": 0,
+        "singleTag": "讲解_右臂_action",
+        "title": "讲解_右臂"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740076,
+        "level": 0,
+        "singleTag": "指向_action",
+        "title": "指向"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 293869,
+        "level": 0,
+        "singleTag": "穆宗昊_env",
+        "title": "穆宗昊"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448330,
+        "level": 0,
+        "singleTag": "桃子_ontology",
+        "title": "桃子"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 293840,
+        "level": 0,
+        "singleTag": "talk1_algo",
+        "title": "talk1"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293830,
+        "level": 0,
+        "singleTag": "你好_激动_action",
+        "title": "你好_激动"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505615,
+        "level": 0,
+        "singleTag": "人_ontology",
+        "title": "人"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740309,
+        "level": 0,
+        "singleTag": "汇合_motion",
+        "title": "汇合"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740624,
+        "level": 0,
+        "singleTag": "引导_motion",
+        "title": "引导"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740029,
+        "level": 0,
+        "singleTag": "双足机器人_concept",
+        "title": "双足机器人"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314204,
+        "level": 0,
+        "singleTag": "夏春胜_env",
+        "title": "夏春胜"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740421,
+        "level": 0,
+        "singleTag": "提问_motion",
+        "title": "提问"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 740427,
+        "level": 0,
+        "singleTag": "穆宗昊_ontology",
+        "title": "穆宗昊"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740054,
+        "level": 0,
+        "singleTag": "橱柜_concept",
+        "title": "橱柜"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740303,
+        "level": 0,
+        "singleTag": "说话_motion",
+        "title": "说话"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740308,
+        "level": 0,
+        "singleTag": "带路_3_motion",
+        "title": "带路_3"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 740474,
+        "level": 0,
+        "singleTag": "视觉_algo",
+        "title": "视觉"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293832,
+        "level": 0,
+        "singleTag": "讲解_左臂_action",
+        "title": "讲解_左臂"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740338,
+        "level": 0,
+        "singleTag": "递送_1_motion",
+        "title": "递送_1"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 740425,
+        "level": 0,
+        "singleTag": "团队成员_ontology",
+        "title": "团队成员"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293837,
+        "level": 0,
+        "singleTag": "握手_action",
+        "title": "握手"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740340,
+        "level": 0,
+        "singleTag": "空闲_motion",
+        "title": "空闲"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740336,
+        "level": 0,
+        "singleTag": "寻找物体_motion",
+        "title": "寻找物体"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740307,
+        "level": 0,
+        "singleTag": "跳舞_1_motion",
+        "title": "跳舞_1"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740393,
+        "level": 0,
+        "singleTag": "迎宾_action",
+        "title": "迎宾"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448275,
+        "level": 0,
+        "singleTag": "容器_ontology",
+        "title": "容器"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 740472,
+        "level": 0,
+        "singleTag": "语音_algo",
+        "title": "语音"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740313,
+        "level": 0,
+        "singleTag": "问候_2_motion",
+        "title": "问候_2"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740317,
+        "level": 0,
+        "singleTag": "巡逻_1_motion",
+        "title": "巡逻_1"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314206,
+        "level": 0,
+        "singleTag": "陈伟_env",
+        "title": "陈伟"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 740426,
+        "level": 0,
+        "singleTag": "周元海_ontology",
+        "title": "周元海"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740059,
+        "level": 0,
+        "singleTag": "地外探测_concept",
+        "title": "地外探测"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740320,
+        "level": 0,
+        "singleTag": "讲解_1_motion",
+        "title": "讲解_1"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740042,
+        "level": 0,
+        "singleTag": "茶水间_concept",
+        "title": "茶水间"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 293839,
+        "level": 0,
+        "singleTag": "talk_algo",
+        "title": "talk"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740036,
+        "level": 0,
+        "singleTag": "桌子_concept",
+        "title": "桌子"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505616,
+        "level": 0,
+        "singleTag": "男人_ontology",
+        "title": "男人"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740030,
+        "level": 0,
+        "singleTag": "穆宗浩_concept",
+        "title": "穆宗浩"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314200,
+        "level": 0,
+        "singleTag": "袁继新_env",
+        "title": "袁继新"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 293908,
+        "level": 0,
+        "singleTag": "宋伟_env",
+        "title": "宋伟"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448277,
+        "level": 0,
+        "singleTag": "杯子_ontology",
+        "title": "杯子"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448352,
+        "level": 0,
+        "singleTag": "鲤鱼_ontology",
+        "title": "鲤鱼"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448354,
+        "level": 0,
+        "singleTag": "蛋糕_ontology",
+        "title": "蛋糕"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 740469,
+        "level": 0,
+        "singleTag": "导航_algo",
+        "title": "导航"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314202,
+        "level": 0,
+        "singleTag": "郑宇化_env",
+        "title": "郑宇化"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740031,
+        "level": 0,
+        "singleTag": "导览机器人_concept",
+        "title": "导览机器人"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505668,
+        "level": 0,
+        "singleTag": "音乐家_ontology",
+        "title": "音乐家"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740012,
+        "level": 0,
+        "singleTag": "杭州_concept",
+        "title": "杭州"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 1,
+        "level": 0,
+        "singleTag": "迎宾点_env",
+        "title": "迎宾点"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293827,
+        "level": 0,
+        "singleTag": "你好_action",
+        "title": "你好"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 740080,
+        "level": 0,
+        "singleTag": "深海机器人_env",
+        "title": "深海机器人"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 739570,
+        "level": 0,
+        "singleTag": "洗手间_env",
+        "title": "洗手间"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740330,
+        "level": 0,
+        "singleTag": "返充_motion",
+        "title": "返充"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 236343,
+        "level": 0,
+        "singleTag": "瓶子_env",
+        "title": "瓶子"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740318,
+        "level": 0,
+        "singleTag": "指向_1_motion",
+        "title": "指向_1"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 293868,
+        "level": 0,
+        "singleTag": "金天磊_env",
+        "title": "金天磊"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740327,
+        "level": 0,
+        "singleTag": "送别_1_motion",
+        "title": "送别_1"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740048,
+        "level": 0,
+        "singleTag": "水_concept",
+        "title": "水"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740041,
+        "level": 0,
+        "singleTag": "实验室_concept",
+        "title": "实验室"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293835,
+        "level": 0,
+        "singleTag": "讲解_列举_action",
+        "title": "讲解_列举"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448349,
+        "level": 0,
+        "singleTag": "香蕉_ontology",
+        "title": "香蕉"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740314,
+        "level": 0,
+        "singleTag": "抓取_1_motion",
+        "title": "抓取_1"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 740082,
+        "level": 0,
+        "singleTag": "载人飞行器_env",
+        "title": "载人飞行器"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448262,
+        "level": 0,
+        "singleTag": "物质_ontology",
+        "title": "物质"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740066,
+        "level": 0,
+        "singleTag": "小幅_action",
+        "title": "小幅"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740305,
+        "level": 0,
+        "singleTag": "带路_1_motion",
+        "title": "带路_1"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740026,
+        "level": 0,
+        "singleTag": "桃子_concept",
+        "title": "桃子"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293828,
+        "level": 0,
+        "singleTag": "你好_普通_action",
+        "title": "你好_普通"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740045,
+        "level": 0,
+        "singleTag": "马里亚纳海沟_concept",
+        "title": "马里亚纳海沟"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 235213,
+        "level": 0,
+        "singleTag": "果汁_env",
+        "title": "果汁"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448261,
+        "level": 0,
+        "singleTag": "音乐家机器人_ontology",
+        "title": "音乐家机器人"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740039,
+        "level": 0,
+        "singleTag": "访客_concept",
+        "title": "访客"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 739570,
+        "level": 0,
+        "singleTag": "厕所_env",
+        "title": "厕所"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740050,
+        "level": 0,
+        "singleTag": "信息_concept",
+        "title": "信息"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740043,
+        "level": 0,
+        "singleTag": "足球_concept",
+        "title": "足球"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740316,
+        "level": 0,
+        "singleTag": "返回原点_motion",
+        "title": "返回原点"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740392,
+        "level": 0,
+        "singleTag": "你好_1_action",
+        "title": "你好_1"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740335,
+        "level": 0,
+        "singleTag": "人物丢失_motion",
+        "title": "人物丢失"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740339,
+        "level": 0,
+        "singleTag": "异常规划_motion",
+        "title": "异常规划"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 232996,
+        "level": 0,
+        "singleTag": "杯子_env",
+        "title": "杯子"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740326,
+        "level": 0,
+        "singleTag": "注视_motion",
+        "title": "注视"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448178,
+        "level": 0,
+        "singleTag": "导览机器人_ontology",
+        "title": "导览机器人"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448270,
+        "level": 0,
+        "singleTag": "果汁_ontology",
+        "title": "果汁"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448267,
+        "level": 0,
+        "singleTag": "饮料_ontology",
+        "title": "饮料"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740051,
+        "level": 0,
+        "singleTag": "果汁_concept",
+        "title": "果汁"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740405,
+        "level": 0,
+        "singleTag": "普通招手_action",
+        "title": "普通招手"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740323,
+        "level": 0,
+        "singleTag": "切换语音技能_motion",
+        "title": "切换语音技能"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448189,
+        "level": 0,
+        "singleTag": "类人物体_ontology",
+        "title": "类人物体"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740015,
+        "level": 0,
+        "singleTag": "冰箱_concept",
+        "title": "冰箱"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740023,
+        "level": 0,
+        "singleTag": "洗手间_concept",
+        "title": "洗手间"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740420,
+        "level": 0,
+        "singleTag": "任务完成_motion",
+        "title": "任务完成"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 2335433,
+        "level": 0,
+        "singleTag": "机器人中心_env",
+        "title": "机器人中心"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 291926,
+        "level": 0,
+        "singleTag": "朱世强_env",
+        "title": "朱世强"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740072,
+        "level": 0,
+        "singleTag": "目光_action",
+        "title": "目光"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505617,
+        "level": 0,
+        "singleTag": "女人_ontology",
+        "title": "女人"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448359,
+        "level": 0,
+        "singleTag": "空间_ontology",
+        "title": "空间"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740053,
+        "level": 0,
+        "singleTag": "知识_concept",
+        "title": "知识"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293841,
+        "level": 0,
+        "singleTag": "握手_双手_action",
+        "title": "握手_双手"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740027,
+        "level": 0,
+        "singleTag": "鸡肉_concept",
+        "title": "鸡肉"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740065,
+        "level": 0,
+        "singleTag": "短时_action",
+        "title": "短时"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740321,
+        "level": 0,
+        "singleTag": "朗读_motion",
+        "title": "朗读"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740306,
+        "level": 0,
+        "singleTag": "导航_motion",
+        "title": "导航"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 740471,
+        "level": 0,
+        "singleTag": "控制_algo",
+        "title": "控制"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740049,
+        "level": 0,
+        "singleTag": "人_concept",
+        "title": "人"
+      },
+      {
+        "classify": "algo",
+        "highLight": 0,
+        "id": 740470,
+        "level": 0,
+        "singleTag": "定位_algo",
+        "title": "定位"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740024,
+        "level": 0,
+        "singleTag": "展厅_concept",
+        "title": "展厅"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740310,
+        "level": 0,
+        "singleTag": "跳舞_2_motion",
+        "title": "跳舞_2"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 739570,
+        "level": 0,
+        "singleTag": "卫生间_env",
+        "title": "卫生间"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740009,
+        "level": 0,
+        "singleTag": "饭_concept",
+        "title": "饭"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740332,
+        "level": 0,
+        "singleTag": "唤醒_motion",
+        "title": "唤醒"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 740428,
+        "level": 0,
+        "singleTag": "金天磊_ontology",
+        "title": "金天磊"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740312,
+        "level": 0,
+        "singleTag": "问候_1_motion",
+        "title": "问候_1"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314205,
+        "level": 0,
+        "singleTag": "李碧清_env",
+        "title": "李碧清"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740011,
+        "level": 0,
+        "singleTag": "杨彦韬_concept",
+        "title": "杨彦韬"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740020,
+        "level": 0,
+        "singleTag": "冰激凌_concept",
+        "title": "冰激凌"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505669,
+        "level": 0,
+        "singleTag": "计算机科学_ontology",
+        "title": "计算机科学"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740304,
+        "level": 0,
+        "singleTag": "导览_2_motion",
+        "title": "导览_2"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740342,
+        "level": 0,
+        "singleTag": "提示可替代目标_motion",
+        "title": "提示可替代目标"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 291859,
+        "level": 0,
+        "singleTag": "顾建军_env",
+        "title": "顾建军"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740035,
+        "level": 0,
+        "singleTag": "壁橱_concept",
+        "title": "壁橱"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740025,
+        "level": 0,
+        "singleTag": "海洋机器人_concept",
+        "title": "海洋机器人"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740032,
+        "level": 0,
+        "singleTag": "小之_concept",
+        "title": "小之"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740046,
+        "level": 0,
+        "singleTag": "海洋_concept",
+        "title": "海洋"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740063,
+        "level": 0,
+        "singleTag": "长时_action",
+        "title": "长时"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740341,
+        "level": 0,
+        "singleTag": "寻找人物_motion",
+        "title": "寻找人物"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740491,
+        "level": 0,
+        "singleTag": "任务开始_motion",
+        "title": "任务开始"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740486,
+        "level": 0,
+        "singleTag": "任务引导_motion",
+        "title": "任务引导"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740033,
+        "level": 0,
+        "singleTag": "烹饪_concept",
+        "title": "烹饪"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448273,
+        "level": 0,
+        "singleTag": "固体_ontology",
+        "title": "固体"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740013,
+        "level": 0,
+        "singleTag": "浙江_concept",
+        "title": "浙江"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740069,
+        "level": 0,
+        "singleTag": "幅度_action",
+        "title": "幅度"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448353,
+        "level": 0,
+        "singleTag": "面包_ontology",
+        "title": "面包"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 2346363,
+        "level": 0,
+        "singleTag": "苹果_env",
+        "title": "苹果"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740016,
+        "level": 0,
+        "singleTag": "洗手槽_concept",
+        "title": "洗手槽"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448280,
+        "level": 0,
+        "singleTag": "瓶_ontology",
+        "title": "瓶"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740331,
+        "level": 0,
+        "singleTag": "指路_motion",
+        "title": "指路"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740018,
+        "level": 0,
+        "singleTag": "地球_concept",
+        "title": "地球"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740322,
+        "level": 0,
+        "singleTag": "就绪_motion",
+        "title": "就绪"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 339732,
+        "level": 0,
+        "singleTag": "展板_env",
+        "title": "展板"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 740431,
+        "level": 0,
+        "singleTag": "余小康_ontology",
+        "title": "余小康"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 35466,
+        "level": 0,
+        "singleTag": "电梯_env",
+        "title": "电梯"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740038,
+        "level": 0,
+        "singleTag": "音乐家_concept",
+        "title": "音乐家"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448342,
+        "level": 0,
+        "singleTag": "食物_ontology",
+        "title": "食物"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740028,
+        "level": 0,
+        "singleTag": "苹果_concept",
+        "title": "苹果"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 314203,
+        "level": 0,
+        "singleTag": "赵新龙_env",
+        "title": "赵新龙"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740060,
+        "level": 0,
+        "singleTag": "云脑平台_concept",
+        "title": "云脑平台"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448263,
+        "level": 0,
+        "singleTag": "存在_ontology",
+        "title": "存在"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740021,
+        "level": 0,
+        "singleTag": "杯子_concept",
+        "title": "杯子"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740319,
+        "level": 0,
+        "singleTag": "指向_2_motion",
+        "title": "指向_2"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740037,
+        "level": 0,
+        "singleTag": "咖啡_concept",
+        "title": "咖啡"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 740081,
+        "level": 0,
+        "singleTag": "地外探测_env",
+        "title": "地外探测"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448340,
+        "level": 0,
+        "singleTag": "水果_ontology",
+        "title": "水果"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740343,
+        "level": 0,
+        "singleTag": "推理物体_motion",
+        "title": "推理物体"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448253,
+        "level": 0,
+        "singleTag": "流体_ontology",
+        "title": "流体"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740044,
+        "level": 0,
+        "singleTag": "张春华_concept",
+        "title": "张春华"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740047,
+        "level": 0,
+        "singleTag": "瓶子_concept",
+        "title": "瓶子"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740022,
+        "level": 0,
+        "singleTag": "钢琴_concept",
+        "title": "钢琴"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740328,
+        "level": 0,
+        "singleTag": "视觉切换_motion",
+        "title": "视觉切换"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448271,
+        "level": 0,
+        "singleTag": "茶_ontology",
+        "title": "茶"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 293910,
+        "level": 0,
+        "singleTag": "谢安桓_env",
+        "title": "谢安桓"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505614,
+        "level": 0,
+        "singleTag": "领导_ontology",
+        "title": "领导"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740058,
+        "level": 0,
+        "singleTag": "深海机器人_concept",
+        "title": "深海机器人"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293834,
+        "level": 0,
+        "singleTag": "讲解_双臂_action",
+        "title": "讲解_双臂"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 293867,
+        "level": 0,
+        "singleTag": "周元海_env",
+        "title": "周元海"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505619,
+        "level": 0,
+        "singleTag": "人工智能_ontology",
+        "title": "人工智能"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740311,
+        "level": 0,
+        "singleTag": "推理人物_motion",
+        "title": "推理人物"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 737604,
+        "level": 0,
+        "singleTag": "双足服务机器人_ontology",
+        "title": "双足服务机器人"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740315,
+        "level": 0,
+        "singleTag": "寻找_motion",
+        "title": "寻找"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740325,
+        "level": 0,
+        "singleTag": "导览_1_motion",
+        "title": "导览_1"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448265,
+        "level": 0,
+        "singleTag": "咖啡_ontology",
+        "title": "咖啡"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740010,
+        "level": 0,
+        "singleTag": "伞_concept",
+        "title": "伞"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448345,
+        "level": 0,
+        "singleTag": "葡萄_ontology",
+        "title": "葡萄"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 293838,
+        "level": 0,
+        "singleTag": "握手_单手_action",
+        "title": "握手_单手"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740337,
+        "level": 0,
+        "singleTag": "转向_1_motion",
+        "title": "转向_1"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740017,
+        "level": 0,
+        "singleTag": "北京_concept",
+        "title": "北京"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740302,
+        "level": 0,
+        "singleTag": "带路_2_motion",
+        "title": "带路_2"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448182,
+        "level": 0,
+        "singleTag": "深海机器人_ontology",
+        "title": "深海机器人"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740019,
+        "level": 0,
+        "singleTag": "箱子_concept",
+        "title": "箱子"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740329,
+        "level": 0,
+        "singleTag": "互动_1_motion",
+        "title": "互动_1"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740391,
+        "level": 0,
+        "singleTag": "你好_2_action",
+        "title": "你好_2"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505622,
+        "level": 0,
+        "singleTag": "熊_ontology",
+        "title": "熊"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740475,
+        "level": 0,
+        "singleTag": "导览场景_motion",
+        "title": "导览场景"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448246,
+        "level": 0,
+        "singleTag": "液体_ontology",
+        "title": "液体"
+      },
+      {
+        "classify": "concept",
+        "highLight": 0,
+        "id": 740057,
+        "level": 0,
+        "singleTag": "载人飞行器_concept",
+        "title": "载人飞行器"
+      },
+      {
+        "classify": "motion",
+        "highLight": 0,
+        "id": 740324,
+        "level": 0,
+        "singleTag": "迎宾_1_motion",
+        "title": "迎宾_1"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505618,
+        "level": 0,
+        "singleTag": "机器人_ontology",
+        "title": "机器人"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740064,
+        "level": 0,
+        "singleTag": "讲解_action",
+        "title": "讲解"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740075,
+        "level": 0,
+        "singleTag": "复原_action",
+        "title": "复原"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448343,
+        "level": 0,
+        "singleTag": "苹果_ontology",
+        "title": "苹果"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740073,
+        "level": 0,
+        "singleTag": "看向_action",
+        "title": "看向"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 448260,
+        "level": 0,
+        "singleTag": "气体_ontology",
+        "title": "气体"
+      },
+      {
+        "classify": "action",
+        "highLight": 0,
+        "id": 740061,
+        "level": 0,
+        "singleTag": "动作_action",
+        "title": "动作"
+      },
+      {
+        "classify": "ontology",
+        "highLight": 0,
+        "id": 505621,
+        "level": 0,
+        "singleTag": "马_ontology",
+        "title": "马"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 2123,
+        "level": 0,
+        "singleTag": "展厅_env",
+        "title": "展厅"
+      },
+      {
+        "classify": "env",
+        "highLight": 0,
+        "id": 738922,
+        "level": 0,
+        "singleTag": "方伟_env",
+        "title": "方伟"
+      }
+    ],
+    "seq": 0,
+    "sessionId": "Robot-13-2021-12-23-11:14:22",
+    "type": "first"
+  }
+}

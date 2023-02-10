@@ -1,0 +1,288 @@
+{
+    "edges": [
+    {
+    "from": 0,
+    "to": 1,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "3",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 0,
+    "to": 2,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "4",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 0,
+    "to": 6,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "1",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 2,
+    "to": 3,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "0",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 2,
+    "to": 4,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "2",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 2,
+    "to": 5,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "1",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 6,
+    "to": 7,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "1",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 7,
+    "to": 8,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "1",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    },
+    {
+    "from": 7,
+    "to": 9,
+    "dashes": false,
+    "color": "#19FA1A",
+    "highLight": 0,
+    "title": "无条件执行",
+    "label": "3",
+    "arrows": {
+    "from": {
+    "enabled": false
+    },
+    "to": {
+    "enabled": true
+    }
+    }
+    }
+    ],
+    "nodes": [
+    {
+    "id": 1,
+    "label": "任务完成",
+    "title": "\ncallback: 任务完成\n执行顺序:3\nData{ItemList:Item{var='motion', value='action://speak'}\nItem{var='content', value='我们到了'}\n}",
+    "level": 1,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#33CCFF",
+    "behaviorType": "action"
+    },
+    {
+    "id": 5,
+    "label": "注视",
+    "title": "\n执行顺序:1\nData{ItemList:Item{var='trackIDs', value='[]'}\nItem{var='gazeAlgo', value='algo://idle'}\nItem{var='visitIDs', value='[]'}\nItem{var='sortedTarget', value='[]'}\nItem{var='motion', value='action://gaze'}\nItem{var='period', value='5000'}\nItem{var='time', value='60000'}\n}",
+    "level": 2,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#33CCFF",
+    "behaviorType": "action"
+    },
+    {
+    "id": 2,
+    "label": "行为树收尾",
+    "title": "\n执行顺序:4\nData{ItemList:Item{var='motion', value='action://gaze'}\n}",
+    "level": 1,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#19FA1A",
+    "behaviorType": "sequence"
+    },
+    {
+    "id": 7,
+    "label": "导航",
+    "title": "\ncallback: 导航\n执行顺序:1\nData{ItemList:Item{var='motion', value='undifined'}\n}",
+    "level": 2,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#19FA1A",
+    "behaviorType": "sequence"
+    },
+    {
+    "id": 6,
+    "label": "导航任务",
+    "title": "\n执行顺序:1",
+    "level": 1,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#19FA1A",
+    "behaviorType": "sequence"
+    },
+    {
+    "id": 0,
+    "label": "root",
+    "title": "\n执行顺序:1",
+    "level": 0,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#19FA1A",
+    "behaviorType": "sequence"
+    },
+    {
+    "id": 8,
+    "label": "预备跑",
+    "title": "\n执行顺序:1\nData{ItemList:Item{var='motion', value='motion://zrobot/arm/prepare'}\n}",
+    "level": 3,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#33CCFF",
+    "behaviorType": "action"
+    },
+    {
+    "id": 9,
+    "label": "运动",
+    "title": "\n执行顺序:3\nData{ItemList:Item{var='motion', value='action://navigate'}\nItem{var='target', value='云脑平台'}\nItem{var='destination', value='云脑平台'}\nItem{var='position', value='1.47;0.35;0.0;-1.22'}\n}",
+    "level": 3,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#33CCFF",
+    "behaviorType": "action"
+    },
+    {
+    "id": 4,
+    "label": "不再盯着",
+    "title": "\n执行顺序:2\nData{ItemList:Item{var='trackIDs', value='[]'}\nItem{var='motion', value='action://gazeCancel'}\nItem{var='visitIDs', value='[]'}\n}",
+    "level": 2,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#33CCFF",
+    "behaviorType": "action"
+    },
+    {
+    "id": 3,
+    "label": "普通交互",
+    "title": "\n执行顺序:0",
+    "level": 2,
+    "highLight": 0,
+    "shape": "box",
+    "color": "#33CCFF",
+    "behaviorType": "action"
+    }
+    ],
+    "time": "2023-02-09 16:18:30:476",
+    "name": "导航",
+    "visionState": null,
+    "logUrl": ":4008/logs/new reason-2023-02-09 08-18-30.276-.log",
+    "btreeXmlUrl": ":4008/btrees/1675930710483.xml",
+    "nodeExpress": "三元组::[$T100];导航;小之1号==true;\n\tmotionNode::MotionNodeData{name='预备跑'};\n\tmotionNode::MotionNodeData{name='行为树收尾'};\n\tmotionNode::MotionNodeData{name='任务开始'};\n\tmotionNode::MotionNodeData{name='不再盯着'};\n\tmotionNode::MotionNodeData{name='注视'};\n\tmotionNode::MotionNodeData{name='导航'};\n\tmotionNode::MotionNodeData{name='运动'};\n\tevn::EvnObj{name='云脑平台};\n\tmotionNode::MotionNodeData{name='任务完成'};\n\tmotionNode::MotionNodeData{name='普通交互'};\n\t",
+    "understand": "语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导航) 目的是：[云脑平台] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "understandTime": "2023-02-09 16:18:30:276",
+    "fatalError": null,
+    "historyTasks": [
+    "2023-02-09 16:18:30:277: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导航) 目的是：[云脑平台] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 16:12:33:835: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导览) 目的是：[展厅] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 16:11:06:650: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导览) 目的是：[地外探测展点] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 16:09:45:693: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导览) 目的是：[云脑平台] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 15:58:35:560: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导航) 目的是：[云脑平台] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 15:57:30:051: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导览) 目的是：[地外探测展点] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 15:56:46:475: 语义理解 :: (小之1号) 带着($T100) 在(zj_robot_exhibition_A_guide)(导览) 目的是：[云脑平台] 氛围是：normal; robotID=iben_a03_1; scenarioId=zj_robot_exhibition_A_guide; sessionID=android_13; 打断:true; 简单模式:true",
+    "2023-02-09 15:53:09:587: 语义理解 :: (小之1号) 带着($T100) 在(zj_exhibition_guide)(导览) 目的是：[地外探测机器人] 氛围是：vip; robotID=iben_a03_1; scenarioId=zj_exhibition_guide; sessionID=android_13; 打断:true; 简单模式:true"
+    ],
+    "historyBtrees": [
+    ":4008/btrees/1675930710483.xml",
+    ":4008/btrees/1675930354406.xml",
+    ":4008/btrees/1675930266891.xml",
+    ":4008/btrees/1675930185957.xml",
+    ":4008/btrees/1675929515766.xml",
+    ":4008/btrees/1675929450326.xml",
+    ":4008/btrees/1675929406728.xml",
+    ":4008/btrees/1675929118203.xml"
+    ]
+}

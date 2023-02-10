@@ -1,0 +1,44 @@
+[
+    {
+        "tree": {
+            "sessionId": "111",
+            "name": "交互",
+            "state": "RUNNING"
+        },
+        "command": {
+            "input": "带我参观深海机器人",
+            "output": {
+                "sub": "导览机器人",
+                "action": "导览",
+                "env": "展厅",
+                "destination": "深海机器人",
+                "obj": "我"
+            }
+        },
+        "graph": {
+            "dsp": "推理改变",
+            "nodes": ""
+        }
+    },
+    {
+        "tree": {
+            "sessionId": "111",
+            "name": "交互",
+            "state": "RUNNING"
+        },
+        "command": {
+            "input": "",
+            "output": {
+                "sub": "参观一下展厅",
+                "action": "参观",
+                "env": "展厅",
+                "destination": "参观展厅",
+                "obj": "我"
+            }
+        },
+        "graph": {
+            "dsp": "推理改变",
+            "nodes": ""
+        }
+    }
+]
