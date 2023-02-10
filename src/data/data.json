@@ -1,7 +1,6 @@
 [
     {
         "tree": {
-            "sessionId": "111",
             "name": "交互",
             "state": "RUNNING"
         },
@@ -17,17 +16,88 @@
         },
         "graph": {
             "dsp": "推理改变",
-            "nodes": ""
+            "nodes": [
+                {
+                    "classify": "concept",
+                    "highLight": 0,
+                    "id": 1025,
+                    "level": 0,
+                    "singleTag": "ChangeEvent46_concept",
+                    "title": "ChangeEvent46"
+                },
+                {
+                    "classify": "concept",
+                    "highLight": 0,
+                    "id": 1254,
+                    "level": 0,
+                    "singleTag": "ChangeEvent_concept",
+                    "title": "ChangeEvent"
+                }
+            ],
+            "edges": [
+                {
+                    "highLight": 0,
+                    "id": 1026254,
+                    "source": 1025,
+                    "target": 1254,
+                    "title": "type"
+                }
+            ]
         }
     },
     {
         "tree": {
-            "sessionId": "111",
             "name": "交互",
             "state": "RUNNING"
         },
         "command": {
-            "input": "",
+            "input": "带我参观深海机器人",
+            "output": {
+                "sub": "导览机器人",
+                "action": "导览",
+                "env": "展厅",
+                "destination": "深海机器人",
+                "obj": "我"
+            }
+        },
+        "graph": {
+            "dsp": "推理改变",
+            "nodes": [
+                {
+                    "classify": "concept",
+                    "highLight": 0,
+                    "id": 1025,
+                    "level": 0,
+                    "singleTag": "ChangeEvent46_concept",
+                    "title": "ChangeEvent46"
+                },
+                {
+                    "classify": "concept",
+                    "highLight": 0,
+                    "id": 1254,
+                    "level": 0,
+                    "singleTag": "ChangeEvent_concept",
+                    "title": "ChangeEvent"
+                }
+            ],
+            "edges": [
+                {
+                    "highLight": 0,
+                    "id": 1026254,
+                    "source": 1025,
+                    "target": 1254,
+                    "title": "type"
+                }
+            ]
+        }
+    },
+    {
+        "tree": {
+            "name": "交互",
+            "state": "RUNNING"
+        },
+        "command": {
+            "input": "参观一下展厅",
             "output": {
                 "sub": "参观一下展厅",
                 "action": "参观",
@@ -37,8 +107,34 @@
             }
         },
         "graph": {
-            "dsp": "推理改变",
-            "nodes": ""
+            "dsp": "推理结束",
+            "nodes": [
+                {
+                    "classify": "concept",
+                    "highLight": 0,
+                    "id": 1025,
+                    "level": 0,
+                    "singleTag": "ChangeEvent46_concept",
+                    "title": "ChangeEvent46"
+                },
+                {
+                    "classify": "concept",
+                    "highLight": 0,
+                    "id": 1254,
+                    "level": 0,
+                    "singleTag": "ChangeEvent_concept",
+                    "title": "ChangeEvent"
+                }
+            ],
+            "edges": [
+                {
+                    "highLight": 0,
+                    "id": 1026254,
+                    "source": 1025,
+                    "target": 1254,
+                    "title": "type"
+                }
+            ]
         }
     }
 ]

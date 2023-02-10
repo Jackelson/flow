@@ -106,6 +106,7 @@ export default {
       handler(n) {
         if (n.name == "交互") n.name = "普通交互";
         changes.push(n);
+        this.changeStatus(n, false);
       },
       deep: true,
     },

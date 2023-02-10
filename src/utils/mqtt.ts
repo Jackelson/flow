@@ -1,7 +1,7 @@
 import mqtt from 'mqtt';
 import { ref, onMounted } from "vue";
 import { getNodeTree, saveTree } from "@/api/nodeTree";
-import graph from '../data/graph.json'
+import data from '../data/data.json'
 let name = '';
 const options = {
   Name:'reason_engine_test',
@@ -45,7 +45,22 @@ const useMQTT = (server: any, topic: any) => {
     res = JSON.parse(res);
     return res;
   }
+  let i = 0;
   onMounted(() => {
+    setInterval(() => {
+      if(i < data.length) {
+        changeNode.value = data[i].tree;
+      const a = {
+       taskUnstanding: data[i].command,
+       knowMap: data[i].graph
+      }
+      msg.value = a;
+        i++;
+      } else {
+        i = 0;
+      }
+    }, 20000)
+    
     // @ts-ignore
     // 连接mqtt
     client.on("connect", () => {

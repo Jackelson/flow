@@ -1,15 +1,12 @@
 import Mock from "mockjs";
 Mock.mock("http://10.101.80.10:8888/testSystem/RadarChart", "get", function() {
-  return {
-    data: [
+  return Mock.mock({
+    "data|1-10": [
       {
-        location: JSON.stringify([0.1, 0.2]),
-      },
-      {
-        location: JSON.stringify([0.1, 0.2]),
+        location: JSON.stringify([Math.random(), Math.random()]),
       },
     ],
-  };
+  });
 });
 Mock.mock("http://10.101.80.10:8888/testSystem/getBtree", "get", function() {
   return {
@@ -369,11 +366,35 @@ Mock.mock("http://10.101.80.10:8888/testSystem/getBtree", "get", function() {
     ],
   };
 });
+import treeList from "../data/treeList.json";
 Mock.mock(
-  RegExp(".*/testSystem/detailBtree/?" + ".*"),
-  // "http://10.101.80.10:8888/testSystem/detailBtree/",
+  RegExp("http://10.101.80.10:8888/testSystem/detailBtree/?" + ".*"),
   "get",
   function(optaion) {
-    console.log(optaion);
+    const arrArrat = optaion.url.split("/");
+    const tree = treeList.filter(
+      (item) => item.id == arrArrat[arrArrat.length - 1]
+    );
+    return {
+      data: {
+        content: JSON.stringify(tree[0]),
+      },
+    };
+  }
+);
+Mock.mock(
+  RegExp("http://10.5.27.50:9194/kbservice/v2/search/kg/get_motion"),
+  "post",
+  function() {
+    return Mock.mock({
+      data: [
+        {
+          "vars|123.3": 1,
+          "dsp|1-10": "dsfsd",
+          "motionId|123.3": 1,
+          "name|@name": "Martinez",
+        },
+      ],
+    });
   }
 );

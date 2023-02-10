@@ -85,6 +85,7 @@ export default defineComponent({
         } else if (newValue.dsp === "推理改变") {
           showList.value = showList.value.concat(newValue.nodes); //将高亮节点放入需要展示的节点列表
           taskQueues.push(newValue); //将newValue放入任务队列
+          console.log(taskQueues);
         } else if (newValue.dsp === "推理结束") {
           resetGraphData("all");
           let list = [...showList.value];
@@ -126,6 +127,7 @@ export default defineComponent({
             }
           }, 1000);
           let i = 0;
+          console.log(taskQueues);
           // 将任务队列用一个变量临时存放
           let arr = [...taskQueues];
           // 清空上一次任务队列
@@ -203,11 +205,14 @@ export default defineComponent({
     }
     // 重置高亮节点列表边列表
     function resetHighLightList(newValue) {
+      const node = newValue[Object.keys(newValue)[1]];
+      const edges = newValue[Object.keys(newValue)[2]];
+      console.log(node, edges);
       highLightnodesList.value = [];
       highLightlinksList.value = [];
-      highLightnodesList.value = newValue.nodes.map((e) => e.id);
-      highLightlinksList.value = newValue.edges.map((e) => e.id);
-      showList.value = newValue.nodes;
+      highLightnodesList.value = node.map((e) => e.id);
+      highLightlinksList.value = edges.map((e) => e.id);
+      showList.value = newValue[Object.keys(newValue)[1]];
       i = 0;
       aList.length = 0;
     }
