@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+// const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 module.exports = {
   publicPath: "./",
   css: {
@@ -18,8 +18,8 @@ module.exports = {
         // 引入mqtt，报错: Buffer is not defined解决之后，又报错 process is not defined，安装buffer、process,然后安装在这里进行webpack的配置
         process: "process",
         Buffer: ["buffer", "Buffer"],
-      }),
-      new BundleAnalyzerPlugin()
+      })
+      // new BundleAnalyzerPlugin()
     );
     if (process.env.NODE_ENV !== "development") {
       config.plugins.push(
