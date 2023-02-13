@@ -51,8 +51,7 @@ const useMQTT = (server: any, topic: any) => {
       if(i < data.length) {
         changeNode.value = data[i].tree;
       const a = {
-       taskUnstanding: data[i].command,
-       knowMap: data[i].graph
+       taskUnstanding: data[i].command
       }
       msg.value = a;
         i++;

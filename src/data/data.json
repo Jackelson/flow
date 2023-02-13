@@ -13,36 +13,6 @@
                 "destination": "深海机器人",
                 "obj": "我"
             }
-        },
-        "graph": {
-            "dsp": "推理改变",
-            "nodes": [
-                {
-                    "classify": "concept",
-                    "highLight": 0,
-                    "id": 1025,
-                    "level": 0,
-                    "singleTag": "ChangeEvent46_concept",
-                    "title": "ChangeEvent46"
-                },
-                {
-                    "classify": "concept",
-                    "highLight": 0,
-                    "id": 1254,
-                    "level": 0,
-                    "singleTag": "ChangeEvent_concept",
-                    "title": "ChangeEvent"
-                }
-            ],
-            "edges": [
-                {
-                    "highLight": 0,
-                    "id": 1026254,
-                    "source": 1025,
-                    "target": 1254,
-                    "title": "type"
-                }
-            ]
         }
     },
     {
@@ -59,36 +29,6 @@
                 "destination": "深海机器人",
                 "obj": "我"
             }
-        },
-        "graph": {
-            "dsp": "推理改变",
-            "nodes": [
-                {
-                    "classify": "concept",
-                    "highLight": 0,
-                    "id": 1025,
-                    "level": 0,
-                    "singleTag": "ChangeEvent46_concept",
-                    "title": "ChangeEvent46"
-                },
-                {
-                    "classify": "concept",
-                    "highLight": 0,
-                    "id": 1254,
-                    "level": 0,
-                    "singleTag": "ChangeEvent_concept",
-                    "title": "ChangeEvent"
-                }
-            ],
-            "edges": [
-                {
-                    "highLight": 0,
-                    "id": 1026254,
-                    "source": 1025,
-                    "target": 1254,
-                    "title": "type"
-                }
-            ]
         }
     },
     {
@@ -105,36 +45,6 @@
                 "destination": "参观展厅",
                 "obj": "我"
             }
-        },
-        "graph": {
-            "dsp": "推理结束",
-            "nodes": [
-                {
-                    "classify": "concept",
-                    "highLight": 0,
-                    "id": 1025,
-                    "level": 0,
-                    "singleTag": "ChangeEvent46_concept",
-                    "title": "ChangeEvent46"
-                },
-                {
-                    "classify": "concept",
-                    "highLight": 0,
-                    "id": 1254,
-                    "level": 0,
-                    "singleTag": "ChangeEvent_concept",
-                    "title": "ChangeEvent"
-                }
-            ],
-            "edges": [
-                {
-                    "highLight": 0,
-                    "id": 1026254,
-                    "source": 1025,
-                    "target": 1254,
-                    "title": "type"
-                }
-            ]
         }
     }
 ]

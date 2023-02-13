@@ -3,11 +3,11 @@
   <ul class="box"></ul>
 </template>
 <script>
-import { defineComponent, watch, onMounted, ref } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 import ForceGraph3D from "3d-force-graph";
 import SpriteText from "three-spritetext";
 import { getMotion } from "../api/graph";
-
+import initData from "../data/graph.json";
 import {
   CSS2DRenderer,
   // CSS2DObject,
@@ -15,15 +15,41 @@ import {
 import Storage from "../utils/storage";
 //定义ForceGraph3D对象
 let Graph;
-let taskQueues = []; //任务推理执行的任务队列
-let timer = null; //定义聚焦延时器
-let taskQueuesTimer = null; //定义任务队列执行定时器
+// let taskQueues = []; //任务推理执行的任务队列
+// let timer = null; //定义聚焦延时器
+// let taskQueuesTimer = null; //定义任务队列执行定时器
 let spinTimer = null; //定义旋转定时器
 let delayedExecution = null; //定义旋转延时器
 let angle = 0; //记录旋转点
-let showListTimer = null;
-let aList = []; //单次任务节点按顺序高亮列表
-let i = 0;
+// let showListTimer = null;
+let i = 0; //高亮节点下标
+const highlightData = [
+  {
+    classify: "ontology",
+    highLight: 0,
+    id: 259,
+    level: 0,
+    singleTag: "项目管理_ontology",
+    title: "项目管理",
+  },
+  {
+    classify: "concept",
+    highLight: 0,
+    id: 917,
+    level: 0,
+    singleTag: "ChangeEvent19_concept",
+    title: "ChangeEvent19",
+  },
+  {
+    classify: "motion",
+    highLight: 0,
+    id: 740478,
+    level: 0,
+    singleTag: "讲解_motion",
+    title: "讲解",
+  },
+];
+
 export default defineComponent({
   name: "Visualze",
   components: {},
@@ -33,7 +59,7 @@ export default defineComponent({
       default: () => {},
     },
   },
-  setup(props) {
+  setup() {
     // 颜色列表
     let colorList = new Map();
     colorList.set("concept", "rgb(109,230,151)");
@@ -43,120 +69,47 @@ export default defineComponent({
     colorList.set("algo", "rgb(233,131,131)");
     colorList.set("action", "rgb(230,96,96)");
     // 高亮节点以及边列表
-    let highLightnodesList = ref([]);
-    let highLightlinksList = ref([]);
+    let highLightnode = 0;
+    // let highLightlinksList = ref();
     let showList = ref([]);
     // 是否双击
     let doubleClickFlag = false;
     onMounted(() => {
-      // init();
-      if (Storage.getItem("initData")) {
-        init(Storage.getItem("initData"));
-      }
+      init(initData);
+      setInterval(() => {
+        i++;
+        if (i >= highlightData.length) {
+          i = 0;
+        }
+        autoHighlight(highlightData[i]);
+      }, 10000);
     });
 
-    watch(
-      () => props.knowMap,
-      (newValue) => {
-        if (newValue.dsp !== "QA") {
-          // console.log(newValue);
-        }
-
-        // 判断其是否为第一帧的全部数据
-        if (newValue.dsp === "第一帧全部数据") {
-          // 第二次加载时，直接调用本地数据就好了
-          // 判断是否为第一次加载
-          if (!Storage.getItem("initData")) {
-            Storage.setItem("initData", {
-              links: JSON.parse(JSON.stringify(newValue.edges)),
-              nodes: JSON.parse(JSON.stringify(newValue.nodes)),
-            });
-            init({
-              links: JSON.parse(JSON.stringify(newValue.edges)),
-              nodes: JSON.parse(JSON.stringify(newValue.nodes)),
-            });
-          } else {
-            Storage.setItem("initData", {
-              links: JSON.parse(JSON.stringify(newValue.edges)),
-              nodes: JSON.parse(JSON.stringify(newValue.nodes)),
-            });
-          }
-          // 判断是否为推理改变
-        } else if (newValue.dsp === "推理改变") {
-          showList.value = showList.value.concat(newValue.nodes); //将高亮节点放入需要展示的节点列表
-          taskQueues.push(newValue); //将newValue放入任务队列
-          console.log(taskQueues);
-        } else if (newValue.dsp === "推理结束") {
-          resetGraphData("all");
-          let list = [...showList.value];
-          showList.value = [];
-          if (showListTimer != null) {
-            clearInterval(showListTimer);
-            showListTimer = null; //清空状态以及定时器
-          }
-          //当任务结束时  统一渲染任务队列以及节点列表
-          let showListIndex = 0;
-          let box = document.querySelector(".box");
-          showListTimer = setInterval(async () => {
-            showListIndex++;
-            if (list.length <= showListIndex) {
-              setTimeout(() => {
-                box.innerHTML = "";
-              }, 3000);
-              clearInterval(showListTimer);
-              showListTimer = null;
-            } else {
-              let res = await getMotion({
-                dsp: "normal",
-                name: list[showListIndex].title,
-              });
-              let li = document.createElement("li");
-              li.innerHTML = `<div style="text-align:center">节点详情</div>vars:${res.data[0]?.vars}<br/>dsp:${res.data[0]?.dsp}<br/>motionId:${res.data[0]?.motionId}<br/>name:${res.data[0]?.name}`;
-              li.setAttribute(
-                "style",
-                "list-style: none;background-color: #161d31;border: 6px solid green;white-space: nowrap;margin-top: 10px;color: white;font-size: 20px;position: relative;transition: all 1s ease;opacity: .7;top: 0;border-radius:10px;padding:10px 5px"
-              );
-              box.insertBefore(li, box.children[0]);
-              if (box.children[3]) {
-                box.children[3].style.opacity = 0;
-                box.children[3].style.top = "100px";
-                setTimeout(() => {
-                  box.removeChild(box.children[3]);
-                }, 800);
-              }
-            }
-          }, 1000);
-          let i = 0;
-          console.log(taskQueues);
-          // 将任务队列用一个变量临时存放
-          let arr = [...taskQueues];
-          // 清空上一次任务队列
-          taskQueues.length = 0;
-          // 重置highlight列表
-          resetHighLightList(arr[i]);
-          // 执行视图更新
-          updateHighlight();
-          taskQueuesTimer = setInterval(() => {
-            i++;
-            if (arr.length < i) {
-              taskQueuesTimer = null;
-              clearInterval(taskQueuesTimer);
-            } else {
-              // 重置highlight列表
-              resetHighLightList(arr[i]);
-              // 执行视图更新
-              updateHighlight();
-            }
-          }, 8000);
-        }
-
-        // if (newValue.dsp === "QA") {
-        //   resetHighLightList(newValue);
-        //   updateHighlight();
-        // }
-        return;
+    const autoHighlight = async (node) => {
+      GraphSpin();
+      highLightnode = node.id;
+      Graph.nodeColor(Graph.nodeColor());
+      let box = document.querySelector(".box");
+      let res = await getMotion({
+        dsp: "normal",
+        name: node.title,
+      });
+      let li = document.createElement("li");
+      li.innerHTML = `<div style="text-align:center">节点详情</div>vars:${res.data[0]?.vars}<br/>dsp:${res.data[0]?.dsp}<br/>motionId:${res.data[0]?.motionId}<br/>name:${res.data[0]?.name}`;
+      li.setAttribute(
+        "style",
+        "list-style: none;background-color: #161d31;border: 6px solid green;white-space: nowrap;margin-top: 10px;color: white;font-size: 20px;position: relative;transition: all 1s ease;opacity: .7;top: 0;border-radius:10px;padding:10px 5px"
+      );
+      box.insertBefore(li, box.children[0]);
+      if (box.children[3]) {
+        box.children[3].style.opacity = 0;
+        box.children[3].style.top = "100px";
+        setTimeout(() => {
+          box.removeChild(box.children[3]);
+        }, 800);
       }
-    );
+    };
+
     // 重置数据
     let directivesRecord = "all";
     function resetGraphData(directives) {
@@ -203,41 +156,6 @@ export default defineComponent({
         }, 13000);
       }, 30000);
     }
-    // 重置高亮节点列表边列表
-    function resetHighLightList(newValue) {
-      const node = newValue[Object.keys(newValue)[1]];
-      const edges = newValue[Object.keys(newValue)[2]];
-      console.log(node, edges);
-      highLightnodesList.value = [];
-      highLightlinksList.value = [];
-      highLightnodesList.value = node.map((e) => e.id);
-      highLightlinksList.value = edges.map((e) => e.id);
-      showList.value = newValue[Object.keys(newValue)[1]];
-      i = 0;
-      aList.length = 0;
-    }
-    // 更新状态
-    function updateHighlight() {
-      GraphSpin();
-      Graph.nodeColor(Graph.nodeColor())
-        .linkWidth(Graph.linkWidth())
-        .linkDirectionalParticles(Graph.linkDirectionalParticles());
-      timer = setInterval(() => {
-        if (i >= aList.length) {
-          timer = null;
-          clearInterval(timer);
-        }
-        if (i === 0 || i === aList.length - 1) {
-          Graph.cameraPosition(
-            aList[i]?.newPos, // new position
-            aList[i]?.node, // lookAt ({ x, y, z })
-            1000 // ms transition duration
-          );
-        }
-
-        i++;
-      }, 4000);
-    }
     // 双曲线位置函数
     function getQuadraticXY(t, sx, sy, sz, cp1x, cp1y, cp1z, ex, ey, ez) {
       return {
@@ -259,7 +177,7 @@ export default defineComponent({
         .backgroundColor("#161d31")
         .nodeOpacity(0.5)
         .nodeColor((node) => {
-          if (highLightnodesList.value.includes(node.id)) {
+          if (highLightnode == node.id) {
             const distance = 400;
             const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
             const newPos =
@@ -270,7 +188,11 @@ export default defineComponent({
                     z: node.z * distRatio,
                   }
                 : { x: 0, y: 0, z: distance }; // special case if node is in (0,0,0)
-            aList.push({ newPos, node });
+            Graph.cameraPosition(
+              newPos, // new position
+              node, // lookAt ({ x, y, z })
+              1500 // ms transition duration
+            );
             return "red";
           } else {
             return colorList.get(node.classify);
@@ -308,15 +230,11 @@ export default defineComponent({
         })
         .linkOpacity(1)
         // 设置高亮
-        .linkColor((link) =>
-          highLightlinksList.value.includes(link.id) ? "#98FB98" : "#87CEFA"
-        )
+        .linkColor(() => "#87CEFA")
         .linkDirectionalArrowResolution(100)
-        // 给节点添加文字关系
+        // 给关系添加文字
         .linkThreeObjectExtend(true)
-        .linkWidth((link) =>
-          highLightlinksList.value.includes(link.id) ? 0.9 : 0.6
-        )
+        .linkWidth(() => 0.6)
         .linkThreeObject((link) => {
           const sprite = new SpriteText(`${link.title}`);
           sprite.color = "white";
@@ -370,9 +288,7 @@ export default defineComponent({
         // 添加自动播放的移动小球
         // .linkDirectionalParticles(2)
         .linkCurveRotation(2)
-        .linkDirectionalParticles((link) =>
-          highLightlinksList.value.includes(link.id) ? 4 : 0
-        )
+        .linkDirectionalParticles(() => 0)
         .linkDirectionalParticleWidth(2)
         .linkCurvature((link) => {
           //给双重关系设置为曲线
