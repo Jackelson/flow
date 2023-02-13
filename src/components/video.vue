@@ -1,6 +1,6 @@
 <template>
   <div class="video">
-    <video id="myVideo" autoplay muted>
+    <video id="myVideo" autoplay muted loop>
       <source
         src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
         type="video/webm"
