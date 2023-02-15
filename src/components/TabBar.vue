@@ -3,7 +3,7 @@
     <div class="top_bar" ref="tbRef" @click="changeMenuStatus"></div>
     <div ref="menuRef" class="menu_box">
       <ul class="menu" v-show="show">
-        <li @click="jump('http://10.101.80.10:8001/flow/#/flow')">
+        <li @click="jump('http://flow.test.jsfw666.com/')">
           <img src="../../public/images/home.jpg" alt="回到主页" />
           <p>回到主页</p>
         </li>
