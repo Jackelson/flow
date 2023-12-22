@@ -28,6 +28,7 @@
     "sass-loader": "^11.0.1",
     "three-spritetext": "^1.6.5",
     "uglifyjs-webpack-plugin": "^2.2.0",
+    "url": "^0.11.3",
     "vue": "^3.0.4",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.6"
